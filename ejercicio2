@@ -26,3 +26,14 @@ print(p.test()) # True
 p = Palindromo("sonar")
 # se imprime "SONAR" debido a la llamada a __del__() cuando la instancia se destruye
 print(p.test()) # False
+
+uml: 
+------------------
+|    Palindromo   |
+------------------
+| - cadena: str   |
+------------------
+| + __init__(cadena: str)|
+| + test() -> bool |
+| + __del__()     |
+------------------
