@@ -1,5 +1,5 @@
 link al repositorio: https://github.com/frankiyonki/Entrega-por-Parejas-UML-Y-C-DIGO.git
-
+RUBENNN perdona por el retraso acabo de llegar a Barcelona y no he conseguido Wifi hasta ahora (que no tengo móvil)
 
 Entrega por Parejas: UML Y CÓDIGO
 a. Palíndromo - método de clase
