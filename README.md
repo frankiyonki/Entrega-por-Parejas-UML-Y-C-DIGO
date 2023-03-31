@@ -1,4 +1,4 @@
-link al repositorio: 
+link al repositorio: https://github.com/frankiyonki/Entrega-por-Parejas-UML-Y-C-DIGO.git
 
 
 Entrega por Parejas: UML Y CÓDIGO
