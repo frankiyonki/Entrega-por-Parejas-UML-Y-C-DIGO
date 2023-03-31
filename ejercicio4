@@ -1,0 +1,25 @@
+class Logger:
+    def __init__(self, archivo):
+        self.archivo = archivo
+        self.mensajes = []
+        self.num_llamadas = 0
+        with open(self.archivo, "w") as f:
+            f.write("--Start log--\n")
+
+    def log(self, mensaje):
+        self.mensajes.append(mensaje)
+        with open(self.archivo, "a") as f:
+            f.write(mensaje + "\n")
+        self.num_llamadas += 1
+
+    def __del__(self):
+        with open(self.archivo, "a") as f:
+            f.write("--End log: {} log(s)--\n".format(self.num_llamadas))
+
+
+class Test:
+    def __init__(self):
+        self.logger = Logger("log.txt")
+
+    def llamada(self, mensaje):
+        self.logger.log(mensaje)
