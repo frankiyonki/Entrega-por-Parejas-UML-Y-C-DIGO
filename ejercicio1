@@ -11,3 +11,12 @@ print(Palindromo.esPalindromo('Arde ya la yedra')) # False
 print(Palindromo.esPalindromo('Ardeyalayedra')) # True
 print(Palindromo.esPalindromo('!@#$% %$#@!')) # True
 print(Palindromo.esPalindromo('L O L')) # True
+
+
+
+uml: 
+------------------------
+|     Palindromo       |
+------------------------
+| + esPalindromo(cadena: str) -> bool |
+------------------------
