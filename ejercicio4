@@ -23,3 +23,24 @@ class Test:
 
     def llamada(self, mensaje):
         self.logger.log(mensaje)
+
+_______________________
+|         Logger        |
+-------------------------
+| - archivo: str        |
+| - mensajes: List[str] |
+| - num_llamadas: int   |
+-------------------------
+| + __init__(archivo: str) |
+| + log(mensaje: str)      |
+| + __del__()              |
+-------------------------
+
+______________________
+|         Test         |
+-----------------------
+| - logger: Logger     |
+-----------------------
+| + __init__()         |
+| + llamada(mensaje: str)|
+-----------------------
