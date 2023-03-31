@@ -1,0 +1,35 @@
+Enunciado: adivina qué mensajes se muestran mediante el siguiente código voluntariamente poco comprensible:
+
+class A: 
+    def z(self): 
+        return self 
+ 
+    def y(self, t): 
+        return len(t) 
+ 
+a = A 
+y = a.z 
+print(y(a)) 
+aa = a() 
+print(aa is a()) 
+z = aa.y 
+print(z(())) 
+print(a().y((a,))) 
+print(A.y(aa, (a,z))) 
+print(aa.y((z,1,'z'))) 
+
+El código crea una clase llamada A que tiene dos métodos: z() y y(). z() simplemente devuelve la instancia actual y y() devuelve la longitud de su argumento.
+
+Luego, el código crea una instancia de la clase A y asigna el método z() a una variable llamada y. Luego, llama a y con la instancia A, lo que devuelve la propia instancia.
+
+Después, crea dos instancias adicionales de A y comprueba si son iguales (lo que devuelve False).
+
+Después, asigna el método y() de una instancia de A a la variable z. Luego, llama a z() con una tupla vacía, lo que devuelve 0.
+
+Luego, crea otra instancia de A y llama a su método y() con una tupla que contiene una instancia de A y la variable z. Como hay dos elementos en la tupla, y() devuelve 2.
+
+Finalmente, llama al método y() de una instancia de A con una tupla que contiene la variable z, el entero 1 y la cadena 'z'. Como hay tres elementos en la tupla, y() devuelve 3.
+
+En resumen, el código crea una clase y algunas instancias, llama a algunos métodos y devuelve algunos resultados.
+
+
